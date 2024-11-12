@@ -36,6 +36,13 @@ const squadra5 = {
 }
 // creazione array di squadre;
 const arrayDiSquadre = [squadra1, squadra2, squadra3, squadra4, squadra5];
+// generazione numeri random da assegnare alle proprieta punti e falli
+for(const squadra of arrayDiSquadre){
+    squadra.punti = getRndInteger(1, 60);
+    squadra.falli = getRndInteger(1, 20);
+}
+
+console.dir(arrayDiSquadre);
 
 function getRndInteger(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
