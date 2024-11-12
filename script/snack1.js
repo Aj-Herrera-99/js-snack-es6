@@ -6,7 +6,7 @@ Stampare a schermo la bici con peso minore.
  */
 
 // DOM elements selection
-const output = document.getElementById("snack1");
+const output1 = document.getElementById("snack1");
 // Dichiarazione oggetti bici
 const bici1 = {
     nome: "bici1",
@@ -59,5 +59,5 @@ for(let i = 1; i<arrayDiBici.length; i++){
 }
 
 console.log(arrayDiBici[indexLeggera].descrizione());
-output.append(arrayDiBici[indexLeggera].descrizione());
+output1.append(arrayDiBici[indexLeggera].descrizione());
 
