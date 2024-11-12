@@ -46,5 +46,6 @@ const bici5 = {
     },
 };
 
-bici5.descrizione();
+const listaBici = [bici1, bici2, bici3, bici4, bici5];
+console.log(listaBici);
 
