@@ -41,9 +41,20 @@ for(const squadra of arrayDiSquadre){
     squadra.punti = getRndInteger(1, 60);
     squadra.falli = getRndInteger(1, 20);
 }
-
+// creazione nuovo array di squadre i cui elementi contengono solo nome e falli
+const nuovoArrayDiSquadre = [];
+for(const squadra of arrayDiSquadre){
+    const nuovaSquadra = {
+        nome: squadra.nome,
+        falli: squadra.falli
+    }
+    nuovoArrayDiSquadre.push(nuovaSquadra);
+}
+// output
 console.dir(arrayDiSquadre);
+console.dir(nuovoArrayDiSquadre);
 
+//! functions
 function getRndInteger(min, max){
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
