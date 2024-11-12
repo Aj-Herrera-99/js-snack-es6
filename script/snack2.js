@@ -34,3 +34,9 @@ const squadra5 = {
     punti: 0,
     falli: 0,
 }
+// creazione array di squadre;
+const arrayDiSquadre = [squadra1, squadra2, squadra3, squadra4, squadra5];
+
+function getRndInteger(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
