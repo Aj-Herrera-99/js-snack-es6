@@ -84,8 +84,3 @@ for(const squadra of nuovoArrayDiSquadre){
 
 console.dir(arrayDiSquadre);
 console.dir(nuovoArrayDiSquadre);
-
-//! functions
-function getRndInteger(min, max){
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
